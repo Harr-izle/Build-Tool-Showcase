@@ -10,22 +10,23 @@ The web application displays a list of popular build tools fetched from a JSON f
 ## Setup Instructions
 
 1. Clone the repository:
-   ```
+     ```
    git clone https://github.com/Harr-izle/Build-Tool-Showcase.git
    cd build-tool-showcase
-   ```
+      ```
+   
 
-2. Install dependencies:
-   ```
+3. Install dependencies:
+     ```
    npm install
-   ```
+      ```
 
-3. Run the development server:
+4. Run the development server:
    ```
    npm start
    ```
 
-4. Open your browser and navigate to `http://localhost:8080`
+5. Open your browser and navigate to `http://localhost:8080`
 
 ## Available npm Scripts
 
@@ -46,8 +47,6 @@ The web application displays a list of popular build tools fetched from a JSON f
 ## Project Structure
 
 - `src/`: Contains the source code
-  - `components/`: React components
-  - `buildTools.json`: Data for the build tools list
   - `index.js`: Main entry point
   - `styles.scss`: Main Sass file
 - `webpack.common.js`: Common Webpack configuration
