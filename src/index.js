@@ -11,11 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       data.forEach((tool) => {
         toolList.innerHTML += `
-                <li>
-                    <h3>${tool.name}</h3>
-                    <p>${tool.description}</p>
-                </li>
-            `;
+          <li>
+            <h3>${tool.name}</h3>
+            <img src="${tool.image}" alt="${tool.name} logo" />
+            <p>${tool.description}</p>
+            <a href="${tool.link}" target="_blank">Learn more</a>
+          </li>
+        `;
       });
     })
     .catch((error) => console.error("Error:", error));
