@@ -1,0 +1,123 @@
+// Variables for colors, fonts, and image dimensions
+$primary-color: #4CAF50;
+$secondary-color: #f2f2f2;
+$text-color: #333;
+$font-family: 'Arial', sans-serif;
+$image-size: 100px;
+
+// Global styles
+body {
+  font-family: $font-family;
+  background-color: $secondary-color;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+}
+
+// Header styles
+header {
+  background-color: $primary-color;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    color: white;
+  }
+}
+
+// Content area styles
+.content-area {
+  padding: 20px;
+
+  h2 {
+    color: $primary-color;
+    text-align: center;
+  }
+
+  .tool-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap; // Allow items to wrap in smaller screens
+    justify-content: center; // Center items
+
+    li {
+      background-color: white;
+      border: 1px solid $primary-color;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 15px;
+      transition: background-color 0.3s, transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc(100% - 40px); // Full width minus margins for small screens
+
+      h3 {
+        margin: 0 0 10px;
+        color: $primary-color;
+      }
+
+      img {
+        width: $image-size;
+        height: $image-size;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        text-align: center;
+        margin: 0 0 10px;
+        color: $text-color;
+      }
+
+      a {
+        background-color: $primary-color;
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+
+      // Hover effect
+      &:hover {
+        background-color: $primary-color;
+        color: white;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// Media Queries for responsiveness
+@media (min-width: 600px) {
+  .tool-list li {
+    width: calc(50% - 40px); // Two items per row on medium screens
+  }
+}
+
+@media (min-width: 900px) {
+  .tool-list li {
+    width: calc(33.33% - 40px); // Three items per row on larger screens
+  }
+}
+
+// Footer styles
+footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 10px;
+
+  p {
+    margin: 0;
+  }
+}
