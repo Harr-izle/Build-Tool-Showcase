@@ -3,7 +3,7 @@ $primary-color: #4CAF50;
 $secondary-color: #f2f2f2;
 $text-color: #333;
 $font-family: 'Arial', sans-serif;
-$image-size: 150px; // Image size
+$image-size: 150px; 
 
 // Global styles
 body {
@@ -39,9 +39,9 @@ header {
     list-style-type: none;
     padding: 0;
     margin: 20px 0;
-    display: grid; // Use grid layout
-    grid-template-columns: repeat(2, 1fr); // Two columns
-    gap: 20px; // Space between items
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
 
     li {
       background-color: white;
@@ -52,7 +52,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
-      animation: fadeIn 0.5s ease forwards; // Add fade-in animation
+      animation: fadeIn 0.5s ease forwards; 
       opacity: 0; // Start invisible
 
       // Delay animation for staggered effect
@@ -63,12 +63,13 @@ header {
 
       h3 {
         margin: 0 0 10px;
-        color: $primary-color;
+        color: $primary-color; 
+        transition: color 0.3s; 
       }
 
       img {
-        width: $image-size; // Image width
-        height: $image-size; // Image height
+        width: $image-size; 
+        height: $image-size; 
         object-fit: contain;
         border-radius: 5px;
         margin-bottom: 10px;
@@ -97,6 +98,11 @@ header {
       &:hover {
         background-color: $primary-color;
         color: white;
+
+        h3 {
+          color: white; 
+        }
+
         transform: translateY(-2px);
       }
     }
@@ -106,20 +112,20 @@ header {
 // Keyframes for fade-in animation
 @keyframes fadeIn {
   to {
-    opacity: 1; // Fade in to visible
+    opacity: 1; 
   }
 }
 
 // Media Queries for responsiveness
 @media (min-width: 600px) {
   .tool-list {
-    grid-template-columns: repeat(2, 1fr); // Two columns for medium screens
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (min-width: 900px) {
   .tool-list {
-    grid-template-columns: repeat(2, 1fr); // Two columns for larger screens
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
