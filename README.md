@@ -1,7 +1,7 @@
 
 # Build Tool Showcase
 
-This project demonstrates the use of various build tools and package managers in a small web application. It showcases the implementation of Webpack, Babel, Sass, ESLint, and Jest in a modern JavaScript development environment.
+This project demonstrates the use of build tool and package managers in a small web application. It showcases the implementation of Webpack, Babel, Sass, ESLint, and Jest in a modern JavaScript development environment.
 
 ## Project Description
 
