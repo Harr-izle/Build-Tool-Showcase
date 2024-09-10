@@ -1,3 +1,6 @@
+import './styles.scss';
+import _ from 'lodash';
+
 document.addEventListener("DOMContentLoaded", () => {
   const toolList = document.querySelector(".tool-list");
 
@@ -9,7 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((data) => {
-      data.forEach((tool) => {
+      // Sort tools alphabetically using lodash
+      const sortedData = _.sortBy(data, 'name');
+      sortedData.forEach((tool) => {
         toolList.innerHTML += `
           <li>
             <h3>${tool.name}</h3>

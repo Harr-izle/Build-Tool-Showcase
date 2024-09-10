@@ -2,25 +2,25 @@
   {
     "name": "Webpack",
     "description": "A static module bundler for modern JavaScript applications.",
-    "image": "https://webpack.js.org/site-logo.1fcab817090e78435061.svg",
+    "image": "https://raw.githubusercontent.com/webpack/media/master/logo/icon-square-big.png",
     "link": "https://webpack.js.org/"
   },
   {
     "name": "Gulp",
     "description": "A toolkit to automate & enhance your workflow.",
-    "image": "https://gulpjs.com/img/gulp-white-text.svg",
+    "image": "https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png",
     "link": "https://gulpjs.com/"
   },
   {
-    "name": "Parcel",
-    "description": "A blazing fast, zero configuration web application bundler.",
-    "image": "https://parceljs.org/assets/parcel@2x.png",
-    "link": "https://parceljs.org/"
+    "name": "Vite",
+    "description": "A fast build tool and development server for modern web projects.",
+    "image": "https://vitejs.dev/logo.svg",
+    "link": "https://vitejs.dev/"
   },
   {
-    "name": "Rollup",
-    "description": "A module bundler for JavaScript used for ES6 modules.",
-    "image": "https://rollupjs.org/logo.svg",
-    "link": "https://rollupjs.org/"
+    "name": "esbuild",
+    "description": "An extremely fast JavaScript bundler and minifier.",
+    "image": "https://esbuild.github.io/images/favicon.svg",
+    "link": "https://esbuild.github.io/"
   }
 ]
