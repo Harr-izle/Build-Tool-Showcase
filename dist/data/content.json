@@ -18,9 +18,9 @@
     "link": "https://vitejs.dev/"
   },
   {
-    "name": "esbuild",
-    "description": "An extremely fast JavaScript bundler and minifier.",
-    "image": "https://esbuild.github.io/images/favicon.svg",
-    "link": "https://esbuild.github.io/"
+    "name": "Grunt",
+    "description": "A JavaScript task runner to automate repetitive tasks.",
+    "image": "https://gruntjs.com/img/grunt-logo-no-wordmark.svg",
+    "link": "https://gruntjs.com/"
   }
 ]

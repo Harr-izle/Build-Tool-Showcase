@@ -3,7 +3,7 @@ $primary-color: #4CAF50;
 $secondary-color: #f2f2f2;
 $text-color: #333;
 $font-family: 'Arial', sans-serif;
-$image-size: 100px;
+$image-size: 150px; // Image size
 
 // Global styles
 body {
@@ -39,21 +39,27 @@ header {
     list-style-type: none;
     padding: 0;
     margin: 20px 0;
-    display: flex;
-    flex-wrap: wrap; // Allow items to wrap in smaller screens
-    justify-content: center; // Center items
+    display: grid; // Use grid layout
+    grid-template-columns: repeat(2, 1fr); // Two columns
+    gap: 20px; // Space between items
 
     li {
       background-color: white;
       border: 1px solid $primary-color;
       border-radius: 5px;
-      margin: 10px;
       padding: 15px;
       transition: background-color 0.3s, transform 0.3s;
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: calc(100% - 40px); // Full width minus margins for small screens
+      animation: fadeIn 0.5s ease forwards; // Add fade-in animation
+      opacity: 0; // Start invisible
+
+      // Delay animation for staggered effect
+      &:nth-child(1) { animation-delay: 0.1s; }
+      &:nth-child(2) { animation-delay: 0.2s; }
+      &:nth-child(3) { animation-delay: 0.3s; }
+      &:nth-child(4) { animation-delay: 0.4s; }
 
       h3 {
         margin: 0 0 10px;
@@ -61,8 +67,8 @@ header {
       }
 
       img {
-        width: $image-size;
-        height: $image-size;
+        width: $image-size; // Image width
+        height: $image-size; // Image height
         object-fit: contain;
         border-radius: 5px;
         margin-bottom: 10px;
@@ -97,16 +103,23 @@ header {
   }
 }
 
+// Keyframes for fade-in animation
+@keyframes fadeIn {
+  to {
+    opacity: 1; // Fade in to visible
+  }
+}
+
 // Media Queries for responsiveness
 @media (min-width: 600px) {
-  .tool-list li {
-    width: calc(50% - 40px); // Two items per row on medium screens
+  .tool-list {
+    grid-template-columns: repeat(2, 1fr); // Two columns for medium screens
   }
 }
 
 @media (min-width: 900px) {
-  .tool-list li {
-    width: calc(33.33% - 40px); // Three items per row on larger screens
+  .tool-list {
+    grid-template-columns: repeat(2, 1fr); // Two columns for larger screens
   }
 }
 
