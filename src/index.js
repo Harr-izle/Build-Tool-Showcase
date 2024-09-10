@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const toolList = document.querySelector(".tool-list");
 
-  fetch("./data/content.json")
+  fetch("data/content.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok"); 
